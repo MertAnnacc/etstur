@@ -66,6 +66,63 @@ public class EtsTurPage {
     @FindBy(xpath = "//h2[normalize-space()='Baia Lara']")
         public WebElement hotelNameLink;
 
-    @FindBy(xpath = "//buton[@class='btn btn-primary list-group-item ']")
+    @FindBy(xpath = "(//a[@title='Odayı Seç'])[1]")
         public WebElement odaSecLink;
+
+    @FindBy(xpath = "//h4[text()='Misafir Bilgileri']")
+        public WebElement misafirLink;
+
+    @FindBy(xpath = "//input[@id=':r1:']")
+        public WebElement isimTextBoxLink;
+
+    @FindBy(xpath = "//input[@id=':r2:']")
+        public WebElement soyIsimTextBoxLink;
+
+    @FindBy(xpath = "//input[@id=':r3:']")
+        public WebElement epostaTextBoxLink;
+
+    @FindBy(xpath = "//input[@id=':r4:']")
+        public WebElement telefonTextBoxLink;
+
+    @FindBy(xpath = "//input[@id=':r5:']")
+        public WebElement tcKimlikTextBoxLink;
+
+    @FindBy(xpath = "//button[contains(text(),'Ödeme Adımına İlerle')]")
+        public WebElement odemeButton;
+
+    @FindBy(xpath = "//h4[text()='Ödeme Bilgileri']")
+        public WebElement odemeBilgileriTextLink;
+
+    @FindBy(xpath = "//div[@class='MuiAccordionSummary-content css-1n11r91']")
+        public WebElement bankaKartLink;
+
+    @FindBy(xpath = "//input[@id=':r8:']")
+        public WebElement kartIsimTextBoxLink;
+
+    @FindBy(xpath = "//input[@id=':r9:']")
+        public WebElement kartNoTextBoxLink;
+
+    @FindBy(xpath = "//input[@id=':ra:']")
+        public WebElement sonKullanimTextBoxLink;
+
+    @FindBy(xpath = "//input[@id=':rb:']")
+        public WebElement cvvTextBoxLink;
+
+    @FindBy(xpath = "//div[@class='css-m5vuyl']//input[@name='serviceAgreement']")
+        public WebElement serviceCheckBoxLink;
+
+    @FindBy(xpath = "//div[@class='css-m5vuyl']//input[@name='kvkk']")
+        public WebElement kvkkCheckBoxLink;
+
+    @FindBy(xpath = "//button[normalize-space()='Ödemeyi tamamla']")
+        public WebElement odemeTamamlaButton;
+
+    @FindBy(xpath = "//h2[text()='Rezervasyonunuz gerçekleşmedi!']")
+        public WebElement basarisizRezervText;
+
+
+
+
+
+
 }
